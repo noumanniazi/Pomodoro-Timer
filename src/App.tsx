@@ -23,7 +23,7 @@ const App: React.FC = () => {
     <div className="App">
       <Router>
       <Header title="Tomato Timer" links={headerLinks} />
-        <Route path="/" exact render={() => (<Timer reset={() => { reset() }} />)} />
+        <Route path="/Pomodoro-Timer" exact render={() => (<Timer reset={() => { reset() }} />)} />
         <Route path="/about-us" exact render={() => (<AboutUs data={aboutUsData} />)} />
         <Route path="/settings" exact render={() => (<Settings data={settings} />)} />
       </Router>
