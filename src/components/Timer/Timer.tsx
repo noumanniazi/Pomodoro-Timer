@@ -3,11 +3,7 @@ import React, { useState, useEffect } from 'react';
 import alarm from '../../assets/alarm.mp3';
 import './Timer.scss';
 
-type props = {
-    reset: Function;
-}
-
-const Timer: React.FC<props> = (props: props) => {
+const Timer: React.FC = () => {
     // const [minutes, setMinutes] = useState(24);
     const [seconds, setSeconds] = useState(1500);
     const [active, setActive] = useState(false);
