@@ -31,7 +31,7 @@ const Timer: React.FC<props> = (props: props) => {
     const handleTimerChange = (link: number) => {
         if (activeLink !== link) {
             setActiveLink(link);
-            setSeconds(link === 1 ? 1500 : link === 300 ? 4 : 600);
+            setSeconds(link === 1 ? 1500 : link === 2 ? 300 : 600);
         }
     }
     return (
@@ -54,7 +54,7 @@ const Timer: React.FC<props> = (props: props) => {
                     }}>Stop</button>
                     <button className='btn reset' onClick={() => {
                         setActive(false);
-                        setSeconds(activeLink === 1 ? 1500 : activeLink === 300 ? 4 : 600);
+                        setSeconds(activeLink === 1 ? 1500 : activeLink === 2 ? 300 : 600);
                     }}>Reset</button>
                 </div>
             </div>
