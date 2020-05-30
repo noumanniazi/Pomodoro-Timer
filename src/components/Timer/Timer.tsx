@@ -4,7 +4,6 @@ import alarm from '../../assets/alarm.mp3';
 import './Timer.scss';
 
 const Timer: React.FC = () => {
-    // const [minutes, setMinutes] = useState(24);
     const [seconds, setSeconds] = useState(1500);
     const [active, setActive] = useState(false);
     const [activeLink, setActiveLink] = useState(1); //values will be 1,2,3 for focus, shortbreak and long break respectively
